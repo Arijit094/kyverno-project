@@ -32,7 +32,8 @@ spec:
           containers:
           - resources:
               requests:
-                memory: "?*"
-                cpu: "?*"
+                memory: "?*"   # Requires memory request
+                cpu: "?*"      # Requires CPU request
               limits:
-                memory: "?*"
+                memory: "?*"   # Requires memory limit
+                cpu: "?*"      # Requires CPU limit
